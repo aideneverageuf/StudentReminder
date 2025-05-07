@@ -1,9 +1,10 @@
 // routes/nlpRoutes.js
 import express from 'express';
-import { parseTask } from '../controllers/nlpController.js';
+import { parseAndCompleteTask } from '../controllers/nlpController.js';
+import { protect } from '../middleware/authMiddleware.js';
 
 const router = express.Router();
 
-router.post('/parse-task', parseTask);
+router.post('/parse-complete', protect, parseAndCompleteTask);
 
 export default router;
