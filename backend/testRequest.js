@@ -2,7 +2,7 @@
 import axios from 'axios';
 
 async function test() {
-  const inputText = "Complete lab report 7 for CHM2049 by Friday at 12:00pm";
+  const inputText = "I have an exam on monday for MAS3114.... chat I might be cooked";
   console.log("🟢 Sending input:", inputText);
 
   try {
